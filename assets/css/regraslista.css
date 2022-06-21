@@ -1,0 +1,1006 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'arial';
+}
+body {
+	background-color: #121212;
+    color: #efefef;
+}
+/* -----------------Igor------------------------- */
+h3 {
+	color: #efefef;
+	font-size: 12pt;
+}
+.width-left {
+	width: 98.5%;
+	margin-right: 1rem;
+}
+.font-h4 {
+	color: #efefef;
+	font-size: 12pt;
+}
+#div1 {
+	display: none;
+}
+#div2 {
+	display: none;
+}
+#div3 {
+	display: none;
+}
+.active {
+	display: block !important
+}
+/* --------------------banner------------------------ */
+.pf {
+	background: linear-gradient(to bottom, rgb(95, 48, 131, 1), rgb(95, 48, 131, 0.0));
+	display: flex;
+	height: 45vh;
+    width: 100%;
+}
+.img-perfil img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+.name {
+	color: #efefef;
+	font-size: 15pt;
+}
+.banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+}
+.banner .container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* ---------------------------btn puxar-modal----------------------------- */
+.img-link {
+	margin: 1rem;
+}
+.edit {
+	margin-top: auto;
+	margin-left: auto;
+	text-align: right;
+}
+.img-link img {
+	width: 20px;
+	height: 25px;
+}
+.edit button {
+	background-color: #7800d7;
+	color: white;
+	padding: 9px 14px;
+	border: none;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.edit button:hover {
+	background-color: rgb(95, 48, 131, 1);
+}
+/* ----------------------------btn puxar-campo------------------------- */
+.form-grupo-formacao button {
+	width: 100%;
+	background-color: rgb(139, 69, 192);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.form-grupo-formacao button:hover {
+	background-color: rgb(95, 48, 131, 1);
+}
+/* ----------------------------------------------------------------- */
+.info-opcao {
+	display: flex;
+}
+.opcao {
+	display: flex;
+	background: #151515;
+	border-radius: 5px 5px 0px 0px;
+	height: 3rem;
+    margin-right: 1rem;
+}
+.opcao a {
+	text-decoration: none;
+	padding: 0 1rem;
+	height: 3rem;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+.opcao a p {
+	margin-top: 1rem;
+}
+.opcao p {
+	text-align: center;
+	font-size: 12pt;
+	color: #efefef;
+}
+.info {
+	display: flex;
+}
+.info-pessoais {
+	display: flex;
+	flex-wrap: wrap;
+	background: #151515;
+	width: 100%;
+	border-radius: 0px 10px 10px 10px;
+}
+.info-left {
+	margin-top: 2rem;
+	margin-left: 3rem;
+	margin-right: 2rem;
+}
+.info-right {
+	margin-top: 2rem;
+	margin-right: 0rem;
+	width: auto;
+}
+.info-bottom p {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: 11pt;
+	color: #efefef;
+}
+.info p {
+	margin: 0, 5rem;
+	font-size: 11pt;
+	margin: 10px;
+	color: #efefef;
+}
+.negrito {
+	margin: 1.5rem;
+	font-size: 12pt;
+	font-weight: bold
+}
+.negrito-info {
+	text-align: justify;
+	font-weight: bold;
+}
+.sobre-mim {
+	display: flex;
+	flex-wrap: wrap;
+	background: #151515;
+	width: 100%;
+	border-radius: 0px 10px 10px 10px;
+}
+.sobre-mim p {
+	font-size: 11pt;
+	color: #efefef;
+	text-align: justify;
+}
+.text-sobre-min {
+	margin-top: 0rem;
+	margin-left: 3rem;
+	margin-bottom: 2rem;
+	margin-right: 3rem;
+}
+.titulo{
+	text-align: center;
+}
+.titulo-sobre-min h2 {
+	font-size: 12pt;
+	color: #efefef;
+	margin-top: 3rem;
+	margin-left: 5rem;
+	margin-bottom: 0.5rem;
+}
+.center-right {
+	margin-right: auto;
+}
+.center-left {
+	margin-left: auto;
+}
+/* -------------------curiculo-------------------- */
+.margin-bottom {
+	margin-bottom: 2rem;
+}
+.margin-top {
+	margin-top: 1rem;
+}
+.sub-topico li {
+	margin-left: 4rem;
+	color: #efefef;
+}
+.info-bottom-curriculo {
+	margin-left: 2rem;
+	width: 100%;
+}
+.info-bottom-curriculo p {
+	margin-right: 2rem;
+	margin-top: 1rem;
+	font-size: 11pt;
+	color: #efefef;
+}
+.info-acade {
+	margin-top: 2rem;
+}
+.info-acade p {
+	margin-top: 0;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
+.date-acade-geral p {
+	margin-top: 0;
+}
+.date-acade-geral {
+	display: flex;
+}
+.date-acade {
+	margin-right: 2rem;
+}
+.date-acade p {
+	margin-left: 1rem;
+}
+/* ---------------------Modal-Edit------------------------ */
+.modal-content {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+.close, .close-curriculo, .close-texto {
+	color: #efefef;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.close-curriculo:hover, .close-curriculo:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.close-texto:hover, .close-texto:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.modal-header h2 {
+	font-size: 18pt;
+	margin-bottom: 2rem;
+}
+.modal-footer h3 {
+	font-size: 14pt;
+	text-align: right;
+	color: #efefef;
+}
+.titulo-caixa h1 {
+	font-size: 15pt;
+	color: #efefef;
+}
+.caixa-texto input, .caixa-texto textarea {
+	width: 100%;
+	padding: 12px 20px;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #121212;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	color: #efefef;
+	border: 1px solid #7800D7;
+}
+.caixa-texto h3 {
+	margin-top: 1rem;
+}
+.date-input {
+	display: flex;
+}
+/* -------------btn-salvar-edit------------- */
+input[type=submit] {
+	width: 100%;
+	background-color: rgb(139, 69, 192);
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: rgb(95, 48, 131, 1);
+}
+/* ------------------finalIgor------------------------- */
+/* ------------------------------lara--------------------------------- */
+.logo2 {
+	display: flex;
+}
+.banner h1 {
+	font-size: 25pt;
+	color: #efefef;
+}
+.texto {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 1rem;
+}
+.texto2 {
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #efefef;
+}
+.texto2 h2 {
+	font-size: 12pt;
+	color: #efefef;
+}
+.logo {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 3rem;
+	margin-left: 4rem;
+}
+#div1 {
+	display: none;
+}
+#div2 {
+	display: none;
+}
+#div3 {
+	display: none;
+}
+.active {
+	display: block !important
+}
+.acessar p {
+	font-size: 11pt;
+}
+.acessar a {
+	width: 150px;
+	height: auto;
+	text-decoration: none;
+	color: #efefef;
+}
+#div1 {
+	display: none;
+}
+#div2 {
+	display: none;
+}
+#div3 {
+	display: none;
+}
+#div4 {
+	display: none;
+}
+.active {
+	display: block !important
+}
+.info {
+	display: flex;
+}
+.info-left {
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-right: 2rem;
+}
+.info-right {
+	margin-top: 2rem;
+	margin-right: 0rem;
+	width: auto;
+}
+.info-bottom p {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	font-size: 11pt;
+	color: #efefef;
+}
+.info p {
+	font-size: 11pt;
+	color: #efefef;
+}
+.negrito {
+	font-size: 12pt;
+	font-weight: bold
+}
+.negrito-info {
+	text-align: justify;
+	font-weight: bold;
+}
+.text-sobre-min {
+	margin-top: 0rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	margin-right: 3rem;
+}
+.titulo-sobre-min h2 {
+	font-size: 11pt;
+	color: #efefef;
+	margin-top: 2rem;
+	margin-left: 4rem;
+	margin-bottom: 0rem;
+}
+.info-sub p {
+	font-size: 12pt;
+	color: #efefef;
+	margin: 0rem 1rem 1rem 1rem;
+}
+.info-sub2 p {
+	font-size: 12pt;
+	color: #efefef;
+	margin: 2.5rem 1rem 5rem 2rem;
+}
+/* /service/ */
+.service {
+	margin: 1rem 1rem 1rem 2rem;
+}
+.service p {
+	margin: 0.5rem;
+	color: #fff;
+	font-size: 12pt;
+}
+.sub-topico {
+	margin: 0rem 0rem 0rem 0rem;
+}
+.topico2 {
+	margin: 0rem 0rem 0rem 1.4rem;
+}
+.vagas-topico {
+	margin: 0rem 0rem 0rem 2rem;
+	margin: 0.5rem;
+	color: #fff;
+	font-size: 12pt;
+}
+.letras {
+	color: #fff;
+	font-size: 10pt;
+	margin: 0rem 0rem 0rem 2rem;
+}
+.topico3 {
+	margin: 0rem 0rem 0rem 2rem;
+	color: #fff;
+	font-size: 10pt;
+	margin: 0rem 0rem 0rem 2rem;
+}
+/* ------------------------------maisa--------------------------------- */
+.fundo {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+	z-index: -1;
+	background-size: cover;
+	background-image: url('../img/fundo.svg');
+	inset: 0;
+}
+#quadrado {
+	z-index: 5;
+	border: 1px solid #7800D7;
+	border-radius: 20px;
+	padding: 5rem;
+	max-width: 700px;
+	width: 100%;
+    min-height: 50vh;
+	background: rgba(8, 0, 0, 0.876);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+#logo {
+	display: grid;
+	place-items: center;
+}
+#logo img {
+	width: 100%;
+}
+#usuario {
+	padding: 2rem 0;
+}
+#usuario div {
+	margin-top: 0.8rem;
+}
+#usuario label input {
+	width: 100%;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid #7800D7;
+	background: rgba(8, 0, 0, 0.876);
+	color: #ccc;
+	font-size: 16px;
+	outline: none;
+	padding: 0 0.5rem;
+	margin-top: 0.4rem;
+}
+.ou {
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #7800D7;
+	border-radius: 100px;
+	background-color: #111;
+	font-size: 16px;
+	margin: auto;
+	line-height: 40px;
+	position: relative;
+}
+#redes {
+	border-top: 1px solid #7800D7;
+	padding-top: 40px;
+	margin-top: -20px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+#redes img {
+	width: 40px;
+	height: 40px;
+}
+#botao {
+	display: flex;
+	justify-content: center;
+	font-size: 14pt;
+	background-color: #7800D7;
+	color: #fff;
+	padding: 0.4rem 3rem;
+	border-radius: 20px;
+	border: none;
+	text-transform: uppercase;
+    margin: 0 auto;
+	margin-top: 2.5rem;
+	text-decoration: none;
+    cursor: pointer;
+}
+.imagefatec {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+    width: 10vh;
+}
+/* -------------------------pedro(login)----------------------------- */
+#conta {
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+/* -----------------------------pedro(vagas)--------------------------- */
+.title {
+	display: flex;
+	justify-content: space-between;
+}
+.title1 {
+	font-size: 16pt;
+	color: #fff;
+	text-transform: uppercase;
+}
+.title2 {
+	font-size: 10pt;
+	color: #fff;
+}
+.status {
+	font-size: 10pt;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: bold;
+}
+/* ---------------------------jão-------------------------------- */
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 0px 10px;
+}
+.logos {
+	gap: 0px 10px;
+	display: flex;
+	align-items: center;
+}
+#navbar {
+	width: 100%;
+	height: 10vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+	position: absolute;
+	transition: height 0.2s linear;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+main .container{
+	margin-top: 10vh;
+}
+.flex {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.jobs img, .fatec img {
+	height: 7vh;
+}
+.jobs, .fatec {
+	display: flex;
+	align-items: center;
+}
+.fatec img {
+	height: 3vh;
+}
+.txtnav {
+	font-size: 10pt;
+	color: #fff;
+	text-decoration: none;
+}
+.acessar, .acessar-vaga, .candidatar {
+	font-size: 10pt;
+	border-radius: 15px;
+	background-color: #7800d7;
+	color: #fff;
+	text-align: center;
+	padding: 0.5rem 1.3rem;
+	text-decoration: none;
+}
+.botoesmodal {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 1rem;
+	margin-right: 3rem;
+}
+.retangulo {
+	background-color: #414141;
+	border-radius: 18px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.title1 {
+	font-size: 16pt;
+	color: #fff;
+	text-transform: uppercase;
+}
+.title2 {
+	font-size: 10pt;
+	color: #fff;
+}
+.habtitle {
+	font-size: 10pt;
+	font-weight: 400;
+	color: #fff;
+	margin-top: 4rem;
+}
+.habilidades span {
+	background-color: #7800d7;
+	padding: 0.2rem 1rem;
+	font-size: 12pt;
+	border-radius: 25px;
+	color: #fff;
+	text-align: center;
+}
+.baixo {
+	display: flex;
+	justify-content: space-between;
+}
+.vagas {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 2rem;
+	padding: 0 auto;
+}
+main {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.buscando {
+	font-size: 23pt;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3rem;
+}
+.sede {
+	position: relative;
+	top: 0;
+	background-image: url(../img/sedeempresa.png);
+	width: 100%;
+	height: 90vh;
+	font-size: 20pt;
+	color: #fff;
+	text-shadow: #1c1c1c;
+	align-items: center;
+	background-size: cover;
+	transition: height 0.2s linear;
+}
+.sede .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	padding: 5rem 0;
+}
+.buscartxt {
+	padding: 0 1rem;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	font-size: 12pt;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 20px;
+	border: none;
+	box-shadow: 2px 2px 10px 0 #000;
+	outline: none;
+	z-index: 99999999999999;
+}
+.txtsede {
+	width: 100%;
+	height: 40px;
+	font-size: 45pt;
+	color: #fff;
+	text-shadow: 2px 2px 10px #000;
+	text-transform: bold;
+	margin-top: 5rem;
+	transition: all 0.2s linear;
+}
+.busca {
+	position: relative;
+	z-index: 99999;
+	transition: all 0.2s linear;
+}
+.placeholder {
+	position: absolute;
+	left: 1rem;
+	top: 0.7rem;
+	font-size: 12pt;
+	transition: top 0.2s linear;
+}
+.filters {
+	margin-top: 1rem;
+}
+.filters a {
+	font-size: 12pt;
+	color: #fff;
+	background: rgba(51, 51, 51, 0.8);
+	border-radius: 20px;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+}
+.filters a i {
+	margin-left: 2rem;
+}
+.botao {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.grayout {
+	position: fixed;
+	background-color: #1c1c1ca6;
+	width: 100%;
+	height: 100vh;
+	z-index: 99999999;
+	display: none;
+}
+.modal, .modal-curriculo, .modal-texto {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 800px;
+	width: 100%;
+	height: 95vh;
+	overflow-y: auto;
+	background-color: #121212;
+	border-radius: 35px;
+	display: none;
+	padding: 2rem;
+	color: #efefef;
+	z-index: 9999999999999999999;
+}
+body::-webkit-scrollbar, .modal::-webkit-scrollbar, .modal-curriculo::-webkit-scrollbar, .modal-texto::-webkit-scrollbar {
+	width: 5px;
+}
+body::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb, .modal-curriculo::-webkit-scrollbar-thumb, .modal-texto::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background: #7800d7;
+}
+.sedemodal {
+	border-radius: 35px;
+	height: 30vh;
+	background-image: linear-gradient(to bottom, transparent 20%, #121212 100%), url(../img/sedeempresa.png);
+	;
+	background-position: center;
+	background-size: 100% auto;
+}
+.logomodal {
+	width: 130px;
+}
+.nomeempresa {
+	color: #fff;
+	font-size: 20pt;
+}
+.verempresa {
+	color: #fff;
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+}
+.empresamodal {
+	position: absolute;
+	left: 5%;
+	top: 23%;
+	z-index: 999999;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.infovaga {
+	padding: 3rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	line-height: 3.3rem;
+	color: #fff;
+}
+.habilidades1, .habilidades2, .descricao p {
+	margin-top: -1.7rem;
+}
+.habilidades1 span, .habilidades2 span {
+	background-color: #7800d7;
+	padding: 0.2rem 1rem;
+	font-size: 12pt;
+	border-radius: 25px;
+	color: #fff;
+	text-align: center;
+}
+.descricao, .obg, .dfc {
+	margin-top: 1rem;
+}
+.menulateral {
+	position: absolute;
+	right: 10%;
+	top: 25rem;
+	background-color: #fff;
+	width: 100%;
+	max-width: 300px;
+	height: 100%;
+	z-index: 9999999;
+}
+.acessarmenu {
+	font-size: 10pt;
+	border-radius: 15px;
+	background-color: #7800d7;
+	color: #fff;
+	text-align: center;
+	padding: 0.5rem 1.3rem;
+	text-decoration: none;
+	z-index: 9999999;
+}
+.escritasmenulateral {
+	z-index: 9999999;
+}
+.menu a i {
+	color: #fff;
+	display: none;
+}
+
+.retangulo-cad{
+    border-radius: 20px;
+    padding-top: 2rem;
+    margin: 0 auto;
+	max-width: 600px;
+    width: 100%;
+    color: #fff;
+}
+.tudo label input, .tudo select{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #7800D7;
+    background: rgba(8, 0, 0, 0.876);
+    color: #ccc;
+    font-size: 16px;
+    outline: none;
+    padding: 0 0.5rem;
+    margin-top: 0.4rem;
+}
+.tudo{
+	width: 100%;
+}
+
+.menu-mobile{
+	display: none;
+}
+
+.error-message{
+	color: #ff4b4b;
+}
+
+@media (max-width: 1000px) {
+	.vagas {
+		grid-template-columns: auto;
+	}
+    #quadrado {
+        padding: 2rem;
+    }
+	.container{
+		padding: 2rem !important;
+	}
+}
+@media (max-width: 768px) {
+	.modal{
+		padding: .5rem;
+	}
+	.sede{
+		height: 70vh;
+	}
+	.txtsede{
+		font-size: 40px;
+	}
+	.container{
+		padding: 1rem !important;
+	}
+	.menu .txtnav, .acessar {
+		display: none;
+	}
+	.menu a i {
+		color: #fff;
+		display: block;
+	}
+	.menu-mobile{
+		max-width: 500px;
+		width: 100%;
+		position: fixed;
+		right: 0;
+		top: 0;
+		height: 100vh;
+		background: #121212;
+		z-index: 99999999999999999999999;
+		padding: 1rem;
+		display: none;
+	}
+	.menu-mobile .menu{
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		width: 100%;
+	}
+	
+	.menu-mobile .menu a{
+		display: block;
+		width: 100%;
+		padding: 1rem 0;
+	}
+}
+@media (max-height: 530px) {
+	.container{
+		padding: .5rem !important;
+	}
+	.txtsede {
+		width: 100%;
+		height: 40px;
+		font-size: 45pt;
+		color: #fff;
+		text-shadow: 2px 2px 10px #000;
+		text-transform: bold;
+		margin-top: 1rem;
+		transition: all 0.2s linear;
+	}
+} 
